@@ -147,13 +147,6 @@ GROUP BY s.review_score_desc
 HAVING game_count > 10
 order by median_price DESC;
 
-SELECT
-    EXTRACT(YEAR FROM try_cast(date AS DATE)) AS release_year,
-    COUNT(*) AS games_count
-FROM fact_games
-WHERE date IS NOT NULL
-GROUP BY release_year
-ORDER BY release_year DESC;
 
 
 with game_language_count as(
