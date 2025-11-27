@@ -22,8 +22,8 @@ SELECT
 FROM fact_games;
 ```
 
-## 3. Топ-10 найпопулярніших категорій
-Цей інсайт виявляє найпоширеніші категорії ігор, де категорія "Single-player" традиційно займає перше місце.
+## 3. Top 10 most popular categories
+This insight reveals the most common categories of games, where the "Single-player" category traditionally ranks first.
 ```
 SELECT
     category_name,
